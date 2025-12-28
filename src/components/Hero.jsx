@@ -5,13 +5,15 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Button from "./Button";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Hero() {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [hasClicked, setHasClicked] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
 
-  const totalVideos = 3;
+  const totalVideos = 4;
   const nextVideoRef = useRef(null);
 
   function handleVideoLoad() {
@@ -60,8 +62,6 @@ function Hero() {
     },
     { dependencies: [currentIndex], revertOnUpdate: true },
   );
-
-  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     gsap.set("#video-frame", {
