@@ -28,19 +28,19 @@ body {
   --font-robert-regular: "robert-regular", sans-serif;
   --font-zentry: "zentry", serif;
 
-  --color-blue-50: #dfdff0;
-  --color-blue-75: #0000;
-  --color-blue-100: #f0f2fa;
-  --color-blue-200: #010101;
-  --color-blue-300: #4fb7dd;
+  --color-green-50: #c7c7c7;
+  --color-green-75: #edede9;
+  --color-green-100: #f0f2fa;
+  --color-green-200: #010101;
+  --color-green-300: #06d6a0;
 
-  --color-violet-300: #5724ff;
+  --color-teal-50: #2a9d8f;
 
   --color-yellow-100: #8e983f;
   --color-yellow-300: #edff66;
 }
 
-@base {
+@layer base {
   @font-face {
     font-family: "circular-web";
     src: url("/fonts/circularweb-book.woff2") format("woff2");
@@ -98,7 +98,7 @@ body {
 
 @layer components {
   .nav-hover-btn {
-    @apply font-general relative ms-10 cursor-pointer text-xs text-blue-50 uppercase after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white;
+    @apply font-general relative ms-10 cursor-pointer text-xs text-green-50 uppercase after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white;
   }
 
   .floating-nav {
@@ -168,7 +168,7 @@ body {
   }
 
   .gallery-img-container {
-    @apply size-64 overflow-hidden bg-violet-300;
+    @apply size-64 overflow-hidden bg-teal-300;
   }
 
   .gallery-img {
@@ -221,7 +221,7 @@ body {
 .three-body {
   --uib-size: 35px;
   --uib-speed: 0.8s;
-  --uib-color: #5d3fd3;
+  --uib-color: #3fd3ae;
   position: relative;
   display: inline-block;
   height: var(--uib-size);
