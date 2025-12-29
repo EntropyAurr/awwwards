@@ -98,7 +98,7 @@ body {
 
 @layer components {
   .nav-hover-btn {
-    @apply font-general relative ms-10 cursor-pointer text-xs text-green-50 uppercase after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white;
+    @apply font-general relative ms-10 cursor-pointer text-xs text-gray-50 uppercase after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-100 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white;
   }
 
   .floating-nav {
@@ -192,7 +192,7 @@ body {
   }
 
   .indicator-line {
-    @apply h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out;
+    @apply h-2 w-0.5 rounded-full bg-white transition-all duration-200 ease-in-out;
   }
 
   .indicator-line.active {
