@@ -64,7 +64,7 @@ function Features() {
             src="videos/feature-1.mp4"
             title={
               <>
-                radi<b className="special-font">n</b>t
+                radia<b className="special-font">n</b>t
               </>
             }
             description="A cross-platform metagame app, turning your activities across Web2 and Web3 into a rewarding adventure."
